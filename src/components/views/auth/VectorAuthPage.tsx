@@ -69,15 +69,23 @@ export default class VectorAuthPage extends React.PureComponent {
             borderRadius: '8px',
         };
 
+        const chatRight = "themes/element/img/backgrounds/chat_right.png";
+        const chatLeft = "themes/element/img/backgrounds/chat_left.png";
+        const cloud = "themes/element/img/backgrounds/cloud.png";
+        const crowd = "themes/element/img/backgrounds/crowd.png";
         return (
-            <div className="mx_AuthPage" style={pageStyle}>
+            <div className="mx_AuthPage">
                 <div className="mx_AuthPage_modal" style={modalStyle}>
-                    <div className="mx_AuthPage_modalBlur" style={blurStyle} />
+                    <div className="mx_AuthPage_modalBlur" />
                     <div className="mx_AuthPage_modalContent" style={modalContentStyle}>
                         { this.props.children }
                     </div>
+                    <img src={chatRight} alt="Element" className='chat-right-pic' />
+                    <img src={chatLeft} alt="Element" className='chat-left-pic' />
+                    <img src={cloud} alt="Element" className='cloud-pic' />
+                    <img src={crowd} alt="Element" className='crowd-pic' />
                 </div>
-                <VectorAuthFooter />
+                { /* <VectorAuthFooter /> */ }
             </div>
         );
     }

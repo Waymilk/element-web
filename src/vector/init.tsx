@@ -41,7 +41,7 @@ import { INSTALLED_MODULES } from "../modules";
 
 export const rageshakePromise = initRageshake();
 
-export function preparePlatform() {
+export async function preparePlatform() {
     if (window.electron) {
         logger.log("Using Electron platform");
         PlatformPeg.set(new ElectronPlatform());
