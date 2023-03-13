@@ -21,7 +21,7 @@ import SdkConfig from 'matrix-react-sdk/src/SdkConfig';
 export default class VectorAuthHeaderLogo extends React.PureComponent {
     public render() {
         const brandingConfig = SdkConfig.getObject("branding");
-        const logoUrl = "themes/element/img/backgrounds/new-logo.png";
+        const logoUrl = "themes/element/img/logos/element-logo.svg";
 
         return (
             <aside className="mx_AuthHeaderLogo">
